@@ -1,0 +1,658 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0ABDA774-C5C0-4FFB-8B1A-D48258A69F22}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>mapmng</RootNamespace>
+    <AssemblyName>mapmng</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v19.2, Version=19.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v19.2.Core, Version=19.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v19.2.Core, Version=19.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v19.2.Core, Version=19.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.ASPxThemes.v19.2, Version=19.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.Resources.v19.2, Version=19.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.v19.2, Version=19.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Npgsql">
+      <HintPath>..\..\..\ปากเกร็ด\7 20210719\Dash_Board_None\Dash_Board_None\bin\Npgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Buffers, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.4.0\lib\netstandard1.1\System.Buffers.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.2\lib\netstandard1.1\System.Memory.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.2\lib\netstandard1.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SysTemThred\03\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\netstandard1.0\System.ValueTuple.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\aggrid.css" />
+    <Content Include="css\leafletstyle.css" />
+    <Content Include="css\mapprint.css" />
+    <Content Include="css\menu.css" />
+    <Content Include="css\ny1_form.css" />
+    <Content Include="css\pkmng.css" />
+    <Content Include="css\root_var.css" />
+    <Content Include="ctrl_js\frontend.js" />
+    <Content Include="default.aspx" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\thsarabunnew.css" />
+    <Content Include="Images\alarm_pin01.png" />
+    <Content Include="Images\alarm_pin02.png" />
+    <Content Include="Images\carpark.png" />
+    <Content Include="Images\cctv01.png" />
+    <Content Include="Images\cctv_normal_24.png" />
+    <Content Include="Images\cctv_normal_32.png" />
+    <Content Include="Images\cctv_shadow_24.png" />
+    <Content Include="Images\cctv_shadow_32.png" />
+    <Content Include="Images\cctv_small.png" />
+    <Content Include="Images\circle01.png" />
+    <Content Include="Images\icons\128pixel\add_128.png" />
+    <Content Include="Images\icons\128pixel\announce_128.png" />
+    <Content Include="Images\icons\128pixel\back_128.png" />
+    <Content Include="Images\icons\128pixel\cancel_128.png" />
+    <Content Include="Images\icons\128pixel\delete_128.png" />
+    <Content Include="Images\icons\128pixel\edit_128.png" />
+    <Content Include="Images\icons\128pixel\Entrepreneur\Entrepreneur_green_128.png" />
+    <Content Include="Images\icons\128pixel\Entrepreneur\Entrepreneur_red_128.png" />
+    <Content Include="Images\icons\128pixel\Entrepreneur\Entrepreneur_yellow_128.png" />
+    <Content Include="Images\icons\128pixel\finish_128.png" />
+    <Content Include="Images\icons\128pixel\layer_128.png" />
+    <Content Include="Images\icons\128pixel\mapbase_128.png" />
+    <Content Include="Images\icons\128pixel\maptool\maptool_128.png" />
+    <Content Include="Images\icons\128pixel\maptool\maptool_area_128.png" />
+    <Content Include="Images\icons\128pixel\maptool\maptool_distant_128.png" />
+    <Content Include="Images\icons\128pixel\maptool\maptool_draw_128.png" />
+    <Content Include="Images\icons\128pixel\navigation_128.png" />
+    <Content Include="Images\icons\128pixel\next_128.png" />
+    <Content Include="Images\icons\128pixel\pol_128.png" />
+    <Content Include="Images\icons\128pixel\print_128.png" />
+    <Content Include="Images\icons\128pixel\public_128.png" />
+    <Content Include="Images\icons\128pixel\report_128.png" />
+    <Content Include="Images\icons\128pixel\save_128.png" />
+    <Content Include="Images\icons\128pixel\search_128.png" />
+    <Content Include="Images\icons\128pixel\Services_128.png" />
+    <Content Include="Images\icons\128pixel\upload_128.png" />
+    <Content Include="Images\icons\24pixel\24 pixel\add_24.png" />
+    <Content Include="Images\icons\24pixel\24 pixel\announce_24.png" />
+    <Content Include="Images\icons\24pixel\24 pixel\back_24.png" />
+    <Content Include="Images\icons\24pixel\24 pixel\cancel_24.png" />
+    <Content Include="Images\icons\24pixel\24 pixel\delete_24.png" />
+    <Content Include="Images\icons\24pixel\24 pixel\edit_24.png" />
+    <Content Include="Images\icons\24pixel\24 pixel\Entrepreneur%28green%29_24.png" />
+    <Content Include="Images\icons\24pixel\24 pixel\Entrepreneur%28red%29_24.png" />
+    <Content Include="Images\icons\24pixel\24 pixel\Entrepreneur%28yellow%29_24.png" />
+    <Content Include="Images\icons\24pixel\24 pixel\Entrepreneur\Entrepreneur%28green%29_24.png" />
+    <Content Include="Images\icons\24pixel\24 pixel\Entrepreneur\Entrepreneur%28red%29_24.png" />
+    <Content Include="Images\icons\24pixel\24 pixel\Entrepreneur\Entrepreneur%28yellow%29_24.png" />
+    <Content Include="Images\icons\24pixel\24 pixel\finish_24.png" />
+    <Content Include="Images\icons\24pixel\24 pixel\layer_24.png" />
+    <Content Include="Images\icons\24pixel\24 pixel\mapbase_24.png" />
+    <Content Include="Images\icons\24pixel\24 pixel\maptool\maptool_24png.png" />
+    <Content Include="Images\icons\24pixel\24 pixel\maptool\maptool_area_24.png" />
+    <Content Include="Images\icons\24pixel\24 pixel\maptool\maptool_distant_24.png" />
+    <Content Include="Images\icons\24pixel\24 pixel\maptool\maptool_draw_24.png" />
+    <Content Include="Images\icons\24pixel\24 pixel\maptool_24png.png" />
+    <Content Include="Images\icons\24pixel\24 pixel\navigation_24.png" />
+    <Content Include="Images\icons\24pixel\24 pixel\next_24.png" />
+    <Content Include="Images\icons\24pixel\24 pixel\POL_24.png" />
+    <Content Include="Images\icons\24pixel\24 pixel\print_24.png" />
+    <Content Include="Images\icons\24pixel\24 pixel\public_24.png" />
+    <Content Include="Images\icons\24pixel\24 pixel\report_24.png" />
+    <Content Include="Images\icons\24pixel\24 pixel\save_24.png" />
+    <Content Include="Images\icons\24pixel\24 pixel\search_24.png" />
+    <Content Include="Images\icons\24pixel\24 pixel\services_24.png" />
+    <Content Include="Images\icons\24pixel\24 pixel\upload_24.png" />
+    <Content Include="Images\icons\24pixel\add_24.png" />
+    <Content Include="Images\icons\24pixel\announce_24.png" />
+    <Content Include="Images\icons\24pixel\back_24.png" />
+    <Content Include="Images\icons\24pixel\cancel_24.png" />
+    <Content Include="Images\icons\24pixel\delete_24.png" />
+    <Content Include="Images\icons\24pixel\edit_24.png" />
+    <Content Include="Images\icons\24pixel\Entrepreneur%28green%29_24.png" />
+    <Content Include="Images\icons\24pixel\Entrepreneur%28red%29_24.png" />
+    <Content Include="Images\icons\24pixel\Entrepreneur%28yellow%29_24.png" />
+    <Content Include="Images\icons\24pixel\Entrepreneur\Entrepreneur%28green%29_24.png" />
+    <Content Include="Images\icons\24pixel\Entrepreneur\Entrepreneur%28red%29_24.png" />
+    <Content Include="Images\icons\24pixel\Entrepreneur\Entrepreneur%28yellow%29_24.png" />
+    <Content Include="Images\icons\24pixel\finish_24.png" />
+    <Content Include="Images\icons\24pixel\layer_24.png" />
+    <Content Include="Images\icons\24pixel\mapbase_24.png" />
+    <Content Include="Images\icons\24pixel\maptool\maptool_24png.png" />
+    <Content Include="Images\icons\24pixel\maptool\maptool_area_24.png" />
+    <Content Include="Images\icons\24pixel\maptool\maptool_distant_24.png" />
+    <Content Include="Images\icons\24pixel\maptool\maptool_draw_24.png" />
+    <Content Include="Images\icons\24pixel\maptool_24png.png" />
+    <Content Include="Images\icons\24pixel\navigation_24.png" />
+    <Content Include="Images\icons\24pixel\next_24.png" />
+    <Content Include="Images\icons\24pixel\POL_24.png" />
+    <Content Include="Images\icons\24pixel\print_24.png" />
+    <Content Include="Images\icons\24pixel\public_24.png" />
+    <Content Include="Images\icons\24pixel\report_24.png" />
+    <Content Include="Images\icons\24pixel\save_24.png" />
+    <Content Include="Images\icons\24pixel\search_24.png" />
+    <Content Include="Images\icons\24pixel\services_24.png" />
+    <Content Include="Images\icons\24pixel\upload_24.png" />
+    <Content Include="Images\icons\i con map\24pixel\bigsign_24.png" />
+    <Content Include="Images\icons\i con map\24pixel\BUS_SHELTER_24.png" />
+    <Content Include="Images\icons\i con map\24pixel\cctv_24.png" />
+    <Content Include="Images\icons\i con map\24pixel\ELEC_LIGHT_24.png" />
+    <Content Include="Images\icons\i con map\24pixel\Pier_p_24.png" />
+    <Content Include="Images\icons\i con map\24pixel\SMALLSIGN_24.png" />
+    <Content Include="Images\icons\i con map\24pixel\TOUR_PKK_P_24.png" />
+    <Content Include="Images\icons\i con map\24pixel\toxic_24.png" />
+    <Content Include="Images\icons\i con map\24pixel\toxin_24.png" />
+    <Content Include="Images\icons\i con map\24pixel\WATER_WELL_PUMP_24.png" />
+    <Content Include="Images\icons\i con map\24pixel\wifi_24.png" />
+    <Content Include="Images\icons\i con map\64pixel\bigsign_64-01.png" />
+    <Content Include="Images\icons\i con map\64pixel\bigsign_64.png" />
+    <Content Include="Images\icons\i con map\64pixel\BUS_SHELTER_64-01.png" />
+    <Content Include="Images\icons\i con map\64pixel\BUS_SHELTER_64.png" />
+    <Content Include="Images\icons\i con map\64pixel\cctv_64-01.png" />
+    <Content Include="Images\icons\i con map\64pixel\cctv_64.png" />
+    <Content Include="Images\icons\i con map\64pixel\ELEC_LIGHT_64-01.png" />
+    <Content Include="Images\icons\i con map\64pixel\ELEC_LIGHT_64.png" />
+    <Content Include="Images\icons\i con map\64pixel\Pier_p_64-01.png" />
+    <Content Include="Images\icons\i con map\64pixel\Pier_p_64.png" />
+    <Content Include="Images\icons\i con map\64pixel\smallsign_64-01.png" />
+    <Content Include="Images\icons\i con map\64pixel\smallsign_64.png" />
+    <Content Include="Images\icons\i con map\64pixel\TOUR_PKK_P_64-01.png" />
+    <Content Include="Images\icons\i con map\64pixel\TOUR_PKK_P_64.png" />
+    <Content Include="Images\icons\i con map\64pixel\toxic_64-01.png" />
+    <Content Include="Images\icons\i con map\64pixel\toxic_64.png" />
+    <Content Include="Images\icons\i con map\64pixel\WATER_WELL_PUMP_64-01.png" />
+    <Content Include="Images\icons\i con map\64pixel\WATER_WELL_PUMP_64.png" />
+    <Content Include="Images\icons\i con map\64pixel\wifi_64-01.png" />
+    <Content Include="Images\icons\i con map\64pixel\wifi_64.png" />
+    <Content Include="Images\icon_demo.png" />
+    <Content Include="Images\icon_demo2.png" />
+    <Content Include="Images\logo.png" />
+    <Content Include="Images\logo01.png" />
+    <Content Include="Images\map01.png" />
+    <Content Include="Images\map_thumbnail\m01.PNG" />
+    <Content Include="Images\map_thumbnail\m02.PNG" />
+    <Content Include="Images\map_thumbnail\m03.PNG" />
+    <Content Include="Images\Parking_2.png" />
+    <Content Include="Images\Parking_2_16.png" />
+    <Content Include="Images\poi01 - Copy.png" />
+    <Content Include="Images\poi01.png" />
+    <Content Include="Images\trucksysmb.png" />
+    <Content Include="Images\vdo50.png" />
+    <Content Include="Images\vdo_wh_24.png" />
+    <Content Include="Images\vdo_wh_32.png" />
+    <Content Include="Images\video24.png" />
+    <Content Include="Images\video32.png" />
+    <Content Include="Images\videocam %282%29.png" />
+    <Content Include="Images\videocam %283%29.png" />
+    <Content Include="Images\videocam %284%29.png" />
+    <Content Include="Images\videocam %285%29.png" />
+    <Content Include="Images\videocam024.png" />
+    <Content Include="Images\videocam032.png" />
+    <Content Include="index.js" />
+    <Content Include="js\aggrid.js" />
+    <Content Include="js\aggrid_layer.js" />
+    <Content Include="js\aggrid_poi.js" />
+    <Content Include="js\CheckboxTree\hummingbird-treeview.css" />
+    <Content Include="js\CheckboxTree\hummingbird-treeview.js" />
+    <Content Include="js\LTileLayerBetterWMS.js" />
+    <Content Include="js\main.js" />
+    <Content Include="js\map_draw.js" />
+    <Content Include="js\map_ident.js" />
+    <Content Include="js\map_layer.js" />
+    <Content Include="js\map_ll.js" />
+    <Content Include="js\map_print.js" />
+    <Content Include="js\poi.js" />
+    <Content Include="js\ui.js" />
+    <Content Include="js_tools\L.Control.ZoomBar-master\.gitattributes" />
+    <Content Include="js_tools\L.Control.ZoomBar-master\BuildZoomBar.py" />
+    <Content Include="js_tools\L.Control.ZoomBar-master\build\images\zoom-to-area-26.png" />
+    <Content Include="js_tools\L.Control.ZoomBar-master\build\images\zoom-to-start-26.png" />
+    <Content Include="js_tools\L.Control.ZoomBar-master\build\L.Control.ZoomBar.css" />
+    <Content Include="js_tools\L.Control.ZoomBar-master\build\L.Control.ZoomBar.js" />
+    <Content Include="js_tools\L.Control.ZoomBar-master\index.html" />
+    <Content Include="js_tools\L.Control.ZoomBar-master\src\images\zoom-to-area-26.png" />
+    <Content Include="js_tools\L.Control.ZoomBar-master\src\images\zoom-to-start-26.png" />
+    <Content Include="js_tools\L.Control.ZoomBar-master\src\L.Control.ZoomBar.css" />
+    <Content Include="js_tools\L.Control.ZoomBar-master\src\L.Control.ZoomBar.js" />
+    <Content Include="js_tools\L.Control.ZoomBar-master\src\leaflet.css" />
+    <Content Include="js_tools\L.Control.ZoomBar-master\src\leaflet.js" />
+    <Content Include="js_tools\leaflet-bing-layer-gh-pages\index.html" />
+    <Content Include="js_tools\leaflet-bing-layer-gh-pages\index.js" />
+    <Content Include="js_tools\leaflet-bing-layer-gh-pages\leaflet-bing-layer.js" />
+    <Content Include="js_tools\leaflet-bing-layer-gh-pages\leaflet-bing-layer.min.js" />
+    <Content Include="js_tools\leaflet-control-window-master\src\L.Control.Window.css" />
+    <Content Include="js_tools\leaflet-control-window-master\src\L.Control.Window.js" />
+    <Content Include="js_tools\leaflet-plugins-master\build\deps.py" />
+    <Content Include="js_tools\leaflet-plugins-master\control\Layers.Load.js" />
+    <Content Include="js_tools\leaflet-plugins-master\control\Permalink.js" />
+    <Content Include="js_tools\leaflet-plugins-master\control\Permalink.Layer.js" />
+    <Content Include="js_tools\leaflet-plugins-master\control\Permalink.Line.js" />
+    <Content Include="js_tools\leaflet-plugins-master\control\Permalink.Marker.js" />
+    <Content Include="js_tools\leaflet-plugins-master\control\Permalink.Overlay.js" />
+    <Content Include="js_tools\leaflet-plugins-master\control\test\PermalinkTest.js" />
+    <Content Include="js_tools\leaflet-plugins-master\css\cross.png" />
+    <Content Include="js_tools\leaflet-plugins-master\css\distance.css" />
+    <Content Include="js_tools\leaflet-plugins-master\css\measure.png" />
+    <Content Include="js_tools\leaflet-plugins-master\css\osb.css" />
+    <Content Include="js_tools\leaflet-plugins-master\examples\bing.html" />
+    <Content Include="js_tools\leaflet-plugins-master\examples\deferred.html" />
+    <Content Include="js_tools\leaflet-plugins-master\examples\distance.html" />
+    <Content Include="js_tools\leaflet-plugins-master\examples\google.html" />
+    <Content Include="js_tools\leaflet-plugins-master\examples\gpx-no-wpt.html" />
+    <Content Include="js_tools\leaflet-plugins-master\examples\gpx-speed.html" />
+    <Content Include="js_tools\leaflet-plugins-master\examples\gpx.html" />
+    <Content Include="js_tools\leaflet-plugins-master\examples\kml.html" />
+    <Content Include="js_tools\leaflet-plugins-master\examples\marker-canvas.html" />
+    <Content Include="js_tools\leaflet-plugins-master\examples\marker-rotate.html" />
+    <Content Include="js_tools\leaflet-plugins-master\examples\marker-text.html" />
+    <Content Include="js_tools\leaflet-plugins-master\examples\osm.html" />
+    <Content Include="js_tools\leaflet-plugins-master\examples\permalink.html" />
+    <Content Include="js_tools\leaflet-plugins-master\examples\topojson.html" />
+    <Content Include="js_tools\leaflet-plugins-master\examples\yandex.html" />
+    <Content Include="js_tools\leaflet-plugins-master\layer\Icon.Canvas.js" />
+    <Content Include="js_tools\leaflet-plugins-master\layer\Layer.Deferred.js" />
+    <Content Include="js_tools\leaflet-plugins-master\layer\Marker.Rotate.js" />
+    <Content Include="js_tools\leaflet-plugins-master\layer\Marker.Text.js" />
+    <Content Include="js_tools\leaflet-plugins-master\layer\tile\Bing.js" />
+    <Content Include="js_tools\leaflet-plugins-master\layer\tile\Yandex.js" />
+    <Content Include="js_tools\leaflet-plugins-master\layer\vector\GPX.js" />
+    <Content Include="js_tools\leaflet-plugins-master\layer\vector\GPX.Speed.js" />
+    <Content Include="js_tools\leaflet-plugins-master\layer\vector\KML.js" />
+    <Content Include="js_tools\leaflet-plugins-master\layer\vector\OSM.js" />
+    <Content Include="js_tools\leaflet-plugins-master\layer\vector\TOPOJSON.js" />
+    <Content Include="js_tools\Leaflet.label-master\.gitattributes" />
+    <Content Include="js_tools\Leaflet.label-master\.gitignore" />
+    <Content Include="js_tools\Leaflet.label-master\build\build.js" />
+    <Content Include="js_tools\Leaflet.label-master\build\deps.js" />
+    <Content Include="js_tools\Leaflet.label-master\build\hint.js" />
+    <Content Include="js_tools\Leaflet.label-master\build\hintrc.js" />
+    <Content Include="js_tools\Leaflet.label-master\dist\images\death.png" />
+    <Content Include="js_tools\Leaflet.label-master\dist\leaflet.label-src.js" />
+    <Content Include="js_tools\Leaflet.label-master\dist\leaflet.label.css" />
+    <Content Include="js_tools\Leaflet.label-master\dist\leaflet.label.js" />
+    <Content Include="js_tools\Leaflet.label-master\example\label.html" />
+    <Content Include="js_tools\Leaflet.label-master\Jakefile.js" />
+    <Content Include="js_tools\Leaflet.label-master\libs\leaflet\images\layers-2x.png" />
+    <Content Include="js_tools\Leaflet.label-master\libs\leaflet\images\layers.png" />
+    <Content Include="js_tools\Leaflet.label-master\libs\leaflet\images\marker-icon%402x.png" />
+    <Content Include="js_tools\Leaflet.label-master\libs\leaflet\images\marker-icon-2x.png" />
+    <Content Include="js_tools\Leaflet.label-master\libs\leaflet\images\marker-icon.png" />
+    <Content Include="js_tools\Leaflet.label-master\libs\leaflet\images\marker-shadow.png" />
+    <Content Include="js_tools\Leaflet.label-master\libs\leaflet\leaflet-src.js" />
+    <Content Include="js_tools\Leaflet.label-master\libs\leaflet\leaflet.css" />
+    <Content Include="js_tools\Leaflet.label-master\libs\leaflet\leaflet.js" />
+    <Content Include="js_tools\Leaflet.label-master\MIT-LICENCE.txt" />
+    <Content Include="js_tools\Leaflet.label-master\src\BaseMarkerMethods.js" />
+    <Content Include="js_tools\Leaflet.label-master\src\CircleMarker.Label.js" />
+    <Content Include="js_tools\Leaflet.label-master\src\copyright.js" />
+    <Content Include="js_tools\Leaflet.label-master\src\FeatureGroup.Label.js" />
+    <Content Include="js_tools\Leaflet.label-master\src\intro.js" />
+    <Content Include="js_tools\Leaflet.label-master\src\Label.js" />
+    <Content Include="js_tools\Leaflet.label-master\src\Leaflet.label.js" />
+    <Content Include="js_tools\Leaflet.label-master\src\Map.Label.js" />
+    <Content Include="js_tools\Leaflet.label-master\src\Marker.Label.js" />
+    <Content Include="js_tools\Leaflet.label-master\src\outro.js" />
+    <Content Include="js_tools\Leaflet.label-master\src\Path.Label.js" />
+    <Content Include="js_tools\Leaflet.PolylineDecorator-master\.gitignore" />
+    <Content Include="js_tools\Leaflet.PolylineDecorator-master\dist\leaflet.polylineDecorator.js" />
+    <Content Include="js_tools\Leaflet.PolylineDecorator-master\example\example.html" />
+    <Content Include="js_tools\Leaflet.PolylineDecorator-master\example\example.js" />
+    <Content Include="js_tools\Leaflet.PolylineDecorator-master\example\icon_plane.png" />
+    <Content Include="js_tools\Leaflet.PolylineDecorator-master\rollup.config.js" />
+    <Content Include="js_tools\Leaflet.PolylineDecorator-master\screenshot.png" />
+    <Content Include="js_tools\Leaflet.PolylineDecorator-master\src\L.PolylineDecorator.js" />
+    <Content Include="js_tools\Leaflet.PolylineDecorator-master\src\L.Symbol.js" />
+    <Content Include="js_tools\Leaflet.PolylineDecorator-master\src\patternUtils.js" />
+    <Content Include="js_tools\Leaflet.PolylineDecorator-master\tests\projectPatternOnPointPath.js" />
+    <Content Include="js_tools\Leaflet.PolylineDecorator-master\tests\utils.js" />
+    <Content Include="js_tools\leaflet.ScaleFactor-master\leaflet.scalefactor.css" />
+    <Content Include="js_tools\leaflet.ScaleFactor-master\leaflet.scalefactor.js" />
+    <Content Include="js_tools\leaflet.ScaleFactor-master\leaflet.scalefactor.min.css" />
+    <Content Include="js_tools\leaflet.ScaleFactor-master\leaflet.scalefactor.min.js" />
+    <Content Include="mainmenu.css" />
+    <Content Include="mis\frm_condo_detail.aspx" />
+    <Content Include="mis\frm_condo_main.aspx" />
+    <Content Include="mis\frm_hist_ sec10_condoroom.aspx" />
+    <Content Include="mis\frm_hist_sec10_constr.aspx" />
+    <Content Include="mis\frm_hist_sec10_parcel.aspx" />
+    <Content Include="mis\frm_hist_sec10_parcel_shp.aspx" />
+    <Content Include="mis\frm_mis.aspx" />
+    <Content Include="mis\frm_section_10_details.aspx" />
+    <Content Include="mis\frm_section_10_main.aspx" />
+    <Content Include="mis\frm_section_92_details.aspx" />
+    <Content Include="mis\frm_section_92_main.aspx" />
+    <Content Include="mis\frm_update_distriet.aspx" />
+    <Content Include="phase2\search\frm_call_search.aspx" />
+    <Content Include="poi_form.html" />
+    <Content Include="frm_map.aspx" />
+    <Content Include="app.config" />
+    <Content Include="fonts\thsarabunnew-webfont.eot" />
+    <Content Include="fonts\thsarabunnew-webfont.ttf" />
+    <Content Include="fonts\thsarabunnew-webfont.woff" />
+    <Content Include="fonts\thsarabunnew_bold-webfont.eot" />
+    <Content Include="fonts\thsarabunnew_bold-webfont.ttf" />
+    <Content Include="fonts\thsarabunnew_bold-webfont.woff" />
+    <Content Include="fonts\thsarabunnew_bolditalic-webfont.eot" />
+    <Content Include="fonts\thsarabunnew_bolditalic-webfont.ttf" />
+    <Content Include="fonts\thsarabunnew_bolditalic-webfont.woff" />
+    <Content Include="fonts\thsarabunnew_italic-webfont.eot" />
+    <Content Include="fonts\thsarabunnew_italic-webfont.ttf" />
+    <Content Include="fonts\thsarabunnew_italic-webfont.woff" />
+    <Content Include="Images\icons\.DS_Store" />
+    <Content Include="Images\icons\128pixel\.DS_Store" />
+    <Content Include="Images\icons\128pixel\Entrepreneur\.DS_Store" />
+    <Content Include="Images\icons\128pixel\maptool\.DS_Store" />
+    <Content Include="Images\icons\24pixel\.DS_Store" />
+    <Content Include="Images\icons\24pixel\24 pixel\.DS_Store" />
+    <Content Include="Images\icons\24pixel\24 pixel\edit2.zip" />
+    <Content Include="Images\icons\24pixel\24 pixel\Entrepreneur\.DS_Store" />
+    <Content Include="Images\icons\24pixel\24 pixel\maptool\.DS_Store" />
+    <Content Include="Images\icons\24pixel\Entrepreneur\.DS_Store" />
+    <Content Include="Images\icons\24pixel\maptool\.DS_Store" />
+    <Content Include="Images\icons\i con map\.DS_Store" />
+    <Content Include="Images\icons\i con map\24pixel\.DS_Store" />
+    <Content Include="Images\icons\i con map\64pixel\.DS_Store" />
+    <Content Include="js_tools\L.Control.ZoomBar-master\README.md" />
+    <Content Include="js_tools\leaflet-control-window-master\LICENSE" />
+    <Content Include="js_tools\leaflet-control-window-master\package.json" />
+    <Content Include="js_tools\leaflet-control-window-master\README.md" />
+    <Content Include="js_tools\leaflet.ScaleFactor-master\LICENSE" />
+    <Content Include="js_tools\leaflet.ScaleFactor-master\README.md" />
+    <Content Include="js_tools\Leaflet.label-master\bower.json" />
+    <Content Include="js_tools\Leaflet.label-master\CHANGELOG.md" />
+    <Content Include="js_tools\Leaflet.label-master\package.json" />
+    <Content Include="js_tools\Leaflet.label-master\README.md" />
+    <Content Include="js_tools\leaflet-plugins-master\.eslintrc" />
+    <Content Include="js_tools\leaflet-plugins-master\.mversionrc" />
+    <Content Include="js_tools\leaflet-plugins-master\bower.json" />
+    <Content Include="js_tools\leaflet-plugins-master\build\Makefile" />
+    <Content Include="js_tools\leaflet-plugins-master\examples\country.min.topojson" />
+    <Content Include="js_tools\leaflet-plugins-master\examples\fells_loop.gpx" />
+    <Content Include="js_tools\leaflet-plugins-master\examples\KML_Samples.kml" />
+    <Content Include="js_tools\leaflet-plugins-master\examples\speed.gpx" />
+    <Content Include="js_tools\leaflet-plugins-master\examples\test.osm" />
+    <Content Include="js_tools\leaflet-plugins-master\LICENSE" />
+    <Content Include="js_tools\leaflet-plugins-master\package.json" />
+    <Content Include="js_tools\leaflet-plugins-master\README.md" />
+    <Content Include="js_tools\leaflet-bing-layer-gh-pages\CHANGELOG.md" />
+    <Content Include="js_tools\leaflet-bing-layer-gh-pages\package.json" />
+    <Content Include="js_tools\leaflet-bing-layer-gh-pages\README.md" />
+    <Content Include="js_tools\Leaflet.PolylineDecorator-master\bower.json" />
+    <Content Include="js_tools\Leaflet.PolylineDecorator-master\LICENSE" />
+    <Content Include="js_tools\Leaflet.PolylineDecorator-master\package.json" />
+    <Content Include="js_tools\Leaflet.PolylineDecorator-master\README.md" />
+    <Content Include="packages.config" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Properties\PublishProfiles\pkmngdata.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="StyleSheet01.css" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="main_service.cs" />
+    <Compile Include="mis\frm_condo_detail.aspx.cs">
+      <DependentUpon>frm_condo_detail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mis\frm_condo_detail.aspx.designer.cs">
+      <DependentUpon>frm_condo_detail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mis\frm_condo_main.aspx.cs">
+      <DependentUpon>frm_condo_main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mis\frm_condo_main.aspx.designer.cs">
+      <DependentUpon>frm_condo_main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mis\frm_hist_ sec10_condoroom.aspx.cs">
+      <DependentUpon>frm_hist_ sec10_condoroom.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mis\frm_hist_ sec10_condoroom.aspx.designer.cs">
+      <DependentUpon>frm_hist_ sec10_condoroom.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mis\frm_hist_sec10_constr.aspx.cs">
+      <DependentUpon>frm_hist_sec10_constr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mis\frm_hist_sec10_constr.aspx.designer.cs">
+      <DependentUpon>frm_hist_sec10_constr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mis\frm_hist_sec10_parcel.aspx.cs">
+      <DependentUpon>frm_hist_sec10_parcel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mis\frm_hist_sec10_parcel.aspx.designer.cs">
+      <DependentUpon>frm_hist_sec10_parcel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mis\frm_hist_sec10_parcel_shp.aspx.cs">
+      <DependentUpon>frm_hist_sec10_parcel_shp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mis\frm_hist_sec10_parcel_shp.aspx.designer.cs">
+      <DependentUpon>frm_hist_sec10_parcel_shp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mis\frm_mis.aspx.cs">
+      <DependentUpon>frm_mis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mis\frm_mis.aspx.designer.cs">
+      <DependentUpon>frm_mis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mis\frm_section_10_details.aspx.cs">
+      <DependentUpon>frm_section_10_details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mis\frm_section_10_details.aspx.designer.cs">
+      <DependentUpon>frm_section_10_details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mis\frm_section_10_main.aspx.cs">
+      <DependentUpon>frm_section_10_main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mis\frm_section_10_main.aspx.designer.cs">
+      <DependentUpon>frm_section_10_main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mis\frm_section_92_details.aspx.cs">
+      <DependentUpon>frm_section_92_details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mis\frm_section_92_details.aspx.designer.cs">
+      <DependentUpon>frm_section_92_details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mis\frm_section_92_main.aspx.cs">
+      <DependentUpon>frm_section_92_main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mis\frm_section_92_main.aspx.designer.cs">
+      <DependentUpon>frm_section_92_main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mis\frm_update_distriet.aspx.cs">
+      <DependentUpon>frm_update_distriet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mis\frm_update_distriet.aspx.designer.cs">
+      <DependentUpon>frm_update_distriet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="my_class\cl_global_var.cs" />
+    <Compile Include="my_class\my_functions.cs" />
+    <Compile Include="phase2\cl_distributer.cs" />
+    <Compile Include="phase2\cl_jsonforleaflet.cs" />
+    <Compile Include="phase2\search\cl_find_geometry.cs" />
+    <Compile Include="phase2\search\frm_call_search.aspx.cs">
+      <DependentUpon>frm_call_search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="phase2\search\frm_call_search.aspx.designer.cs">
+      <DependentUpon>frm_call_search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="frm_map.aspx.cs">
+      <DependentUpon>frm_map.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_map.aspx.designer.cs">
+      <DependentUpon>frm_map.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="app_code\" />
+    <Folder Include="mis\test\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>59227</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:59227/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

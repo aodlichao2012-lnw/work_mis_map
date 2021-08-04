@@ -1,0 +1,115 @@
+﻿.ident_form {
+}
+
+
+    .ident_form table {
+        width: calc(100% - 20px);
+        display: inline-block;
+        color: #888888;
+    }
+
+    .ident_form table td{
+        /*width: 220px;*/
+    }
+
+.ident_content_form{
+    height:100%;
+    width:100%;
+    overflow:overlay;
+    min-width:unset;
+}
+
+.frm_ident_label {
+    width: 20%;
+    overflow: hidden;
+}
+
+.frm_ident_text {
+    width: 80%;
+}
+
+.display_text_style {
+    width: calc(100% - 5px);
+}
+
+
+/* Style the tab */
+.tab01 {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+    /* Style the buttons inside the tab */
+    .tab01 button {
+        background-color: inherit;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 5px 15px;
+        transition: 0.2s;
+        
+    }
+
+        /* Change background color of buttons on hover */
+        .tab01 button:hover {
+            background-color: #ddd;
+        }
+
+        /* Create an active/current tablink class */
+        .tab01 button.active {
+            background-color: #ccc;
+        }
+
+/* Style the tab content */
+.tabcontent01 {
+    height:100%;
+    display: none;
+    padding: 15px 0px;
+    /*border: 1px solid #ccc;*/
+    border-top: none;
+    overflow: overlay;
+}
+
+.page_toolpanel01 {
+    overflow: overlay;
+}
+
+.page_panel01 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #FFFFFF;
+    transition: 0.2s;
+    /* float: right; */
+    overflow: overlay;
+    padding-right: 20px;
+}
+
+.page_panel02 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #FFFFFF;
+    transition: 0.2s;
+    /* float: right; */
+    overflow: overlay;
+    padding-right: 10px;
+}
+
+.table01 {
+    width: 100%;
+    border: 1px solid #C0C0C0;
+    background-color:#FFFFFF;
+    transition:0.2s;
+}
+
+.table01:hover {
+    border: 1px solid #C0C0C0;
+    background-color: #f1f1f1;
+}

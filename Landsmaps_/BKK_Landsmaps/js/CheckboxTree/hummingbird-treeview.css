@@ -1,0 +1,84 @@
+.hummingbird-treeview,
+.hummingbird-treeview * {
+    list-style: none;
+    /*font-size: 20px;*/
+    /*line-height: 30px;*/
+    transition: 0.2s;
+    margin-bottom: 5px;
+}
+
+
+
+.hummingbird-treeview label {
+    font-weight: normal;
+}
+
+    .hummingbird-treeview label:hover {
+        font-weight: normal;
+        color: var(--a-hover-color);
+    }
+
+
+    .hummingbird-treeview input[type=checkbox] {
+        width: 16px;
+        height: 16px;
+        padding: 0px;
+        margin: 0px;
+        vertical-align: sub;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+.hummingbird-treeview ul:not(.hummingbird-base) {
+    display: none;
+}
+
+    .hummingbird-treeview .fa {
+        font-style: normal;
+        cursor: pointer;
+        font-size: 20px;
+        display: inline-block;
+        width: 20px;
+        vertical-align: middle;
+    }
+    .hummingbird-treeview .imgicon {
+        padding-left: 6px;
+        height: 24px;
+        width: 24px;
+        vertical-align: middle;
+        opacity: 1;
+        transition: 0.3s;
+       
+    }
+    .hummingbird-treeview .noimage {
+        display: inline-block;
+        width: 30px
+    }
+    .hummingbird-treeview .imgstyle {
+        padding-left: 6px;
+        vertical-align: middle;
+        opacity: 1;
+        transition: 0.3s;
+    }
+
+    .hummingbird-treeview .imgicon:hover {
+        opacity: 0.7;
+    }
+
+    .hummingbird-treeview .fa:hover {
+        color: var(--a-hover-color);
+    }
+
+.nochild {
+    color: #e5e5e5;
+    display: inline-block;
+    width: 20px;
+}
+
+
+.hummingbird-treeview .nodeopac {
+    display: none;
+    margin-bottom: 15px;
+    margin-left: 30px
+}
+ 

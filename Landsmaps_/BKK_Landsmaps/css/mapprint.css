@@ -1,0 +1,73 @@
+﻿.grid-print-container {
+    grid-template: auto 1fr auto / 1fr;
+    /*background-color: orange;*/
+}
+
+.grid-map-print {
+    grid-row: 2;
+    display:block;
+}
+
+.grid-print-container > .print_title,
+.grid-print-container > .print_sub-content {
+    color: #808080;
+}
+
+.print_title {
+    grid-row: 1;
+    justify-self: center;
+    text-align: center;
+    color: grey;
+    box-sizing: border-box;
+    margin-top: 0;
+}
+
+.print_sub-content {
+    grid-row: 5;
+    padding-left: 10px;
+    text-align: center;
+    color: grey;
+    box-sizing: border-box;
+}
+
+[leaflet-browser-print-pages] {
+    display: none;
+}
+
+.pages-print-container [leaflet-browser-print-pages] {
+    display: block;
+}
+
+.map_legend {
+    background-color: #FFFFFF;
+    padding: 5px 10px;
+    list-style: none;
+    border: 1px solid #CCCCCC;
+    transition: 0.3s;
+    text-align: left;
+    font-size: 12px;
+    margin-right: 2px !important;
+    margin-bottom: 2px !important;
+}
+
+    .map_legend li {
+        margin:3px 0;
+    }
+
+    .map_legend .listlayer {
+        display: inline-block;
+        margin-left: 5px;
+    }
+    .map_legend .listlayer_l {
+        display: block;
+    }
+
+    .map_legend .imgstyle {
+        vertical-align: middle;
+        opacity: 1;
+        transition: 0.3s;
+    }
+    .map_legend .noimage {
+        display: inline-block;
+        width: 30px
+    }

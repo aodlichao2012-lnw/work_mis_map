@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\_pk</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/de/Npgsql.resources.dll">
+      <publishTime>09/18/2015 07:30:48</publishTime>
+    </File>
+    <File Include="bin/es/Npgsql.resources.dll">
+      <publishTime>09/18/2015 07:30:48</publishTime>
+    </File>
+    <File Include="bin/fi/Npgsql.resources.dll">
+      <publishTime>09/18/2015 07:30:48</publishTime>
+    </File>
+    <File Include="bin/fr/Npgsql.resources.dll">
+      <publishTime>09/18/2015 07:30:48</publishTime>
+    </File>
+    <File Include="bin/ja/Npgsql.resources.dll">
+      <publishTime>09/18/2015 07:30:48</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>06/15/2015 02:06:24</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>11/27/2018 18:07:34</publishTime>
+    </File>
+    <File Include="bin/Npgsql.dll">
+      <publishTime>06/12/1475 21:52:38</publishTime>
+    </File>
+    <File Include="bin/pkmngdata.dll">
+      <publishTime>04/04/2019 16:13:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>06/18/2015 20:19:44</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/System.Runtime.CompilerServices.Unsafe.dll">
+      <publishTime>05/15/2018 13:29:42</publishTime>
+    </File>
+    <File Include="bin/System.Threading.Tasks.Extensions.dll">
+      <publishTime>05/15/2018 13:29:46</publishTime>
+    </File>
+    <File Include="bin/System.ValueTuple.dll">
+      <publishTime>05/15/2018 13:29:52</publishTime>
+    </File>
+    <File Include="bin/zh-CN/Npgsql.resources.dll">
+      <publishTime>09/18/2015 07:30:48</publishTime>
+    </File>
+    <File Include="frm_entinputlatlong.aspx">
+      <publishTime>03/31/2019 14:39:00</publishTime>
+    </File>
+    <File Include="frm_entinsert.aspx">
+      <publishTime>04/03/2019 15:47:12</publishTime>
+    </File>
+    <File Include="frm_ent_main.aspx">
+      <publishTime>03/30/2019 22:37:42</publishTime>
+    </File>
+    <File Include="frm_ent_mngImages.aspx">
+      <publishTime>03/31/2019 14:28:14</publishTime>
+    </File>
+    <File Include="frm_mainselect.aspx">
+      <publishTime>04/02/2019 13:38:36</publishTime>
+    </File>
+    <File Include="frm_mng_datatable.aspx">
+      <publishTime>03/26/2019 14:22:25</publishTime>
+    </File>
+    <File Include="frm_moPOItype_main.aspx">
+      <publishTime>03/26/2019 14:28:46</publishTime>
+    </File>
+    <File Include="frm_NewQuestion.aspx">
+      <publishTime>04/02/2019 21:54:21</publishTime>
+    </File>
+    <File Include="frm_POIinputlatlong.aspx">
+      <publishTime>03/26/2019 14:28:46</publishTime>
+    </File>
+    <File Include="frm_POIinsert.aspx">
+      <publishTime>04/02/2019 20:23:39</publishTime>
+    </File>
+    <File Include="frm_POI_main.aspx">
+      <publishTime>03/30/2019 09:13:43</publishTime>
+    </File>
+    <File Include="frm_POI_mngImages.aspx">
+      <publishTime>03/27/2019 13:12:57</publishTime>
+    </File>
+    <File Include="frm_POI_search.aspx">
+      <publishTime>03/29/2019 22:50:28</publishTime>
+    </File>
+    <File Include="frm_ViewWebboard.aspx">
+      <publishTime>03/26/2019 14:28:46</publishTime>
+    </File>
+    <File Include="frm_Webboard.aspx">
+      <publishTime>03/26/2019 14:28:46</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>03/26/2019 11:32:15</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>04/02/2019 22:17:50</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,21 @@
+﻿:root{
+  --fontname: Roboto;
+  --content_fsize : 14px;
+  --button_width1 : 120;
+}
+
+.button_size1 {
+    width:100px;
+}
+.label_size1 {
+    width:300px;
+}
+.textbox_size1 {
+    width:400px;
+}
+
+.div_inline_box {
+            display:inline-block;
+            vertical-align:top;
+            padding: 10px 10px 10px 10px ;
+        }

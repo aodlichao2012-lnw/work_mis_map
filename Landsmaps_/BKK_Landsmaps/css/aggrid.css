@@ -1,0 +1,128 @@
+﻿.panel_aggrid_layer {
+    height: calc(100% - 250px);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 300px;
+}
+
+
+.panel_aggrid_poi {
+    height: calc(100% - 330px);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 300px;
+}
+
+.panel_aggrid_ent {
+    height: calc(100% - 450px);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 300px;
+}
+
+
+.panel_aggrid_entreport {
+    height: calc(100% - 400px);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 300px;
+}
+
+.panel_aggrid_toxic {
+    height: calc(100% - 270px);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 300px;
+}
+
+.panel_aggrid_serv {
+    height: calc(100% - 330px);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 300px;
+}
+
+.panel_aggrid_serv_user {
+    height: calc(100% - 250px);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 300px;
+}
+
+
+.panel_aggrid_eoc_evt01 {
+    height: calc(100% - 480px);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 500px;
+}
+
+.panel_aggrid_eoc_inv01 {
+    height: calc(100% - 500px);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 500px;
+}
+
+.panel_aggrid_eoc_evt02 {
+    height: calc(100% - 450px);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 500px;
+}
+
+.panel_aggrid_eoc_inv02 {
+    height: calc(100% - 550px);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    min-height: 500px;
+}
+
+.aggrid_eoc_inv02 {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    min-height: 500px;
+    margin-right:3px;
+}
+
+
+.ag-theme-balham .ag-cell-focus {
+    border: none !important;
+}
+
+
+.ag-theme-balham {
+    font-family: var(--default-font) !important;
+    font-size: 1em !important;
+    color: #333333 !important;
+
+}
+
+    .ag-theme-balham .ag-header {
+        font-family: var(--default-font) !important;
+        font-size: 1em !important;
+        color: #333333 !important;
+    }
+
+
+    .ag-theme-balham .ag_row_green {
+        background-color: rgba(0, 255, 00, 0.1);
+    }
+    .ag-theme-balham .ag_row_gray {
+        background-color: rgba(128, 128, 128, 0.1);
+    }
+    .ag-theme-balham .ag_row_red {
+        background-color: rgba(255, 0, 0, 0.1);
+    }
