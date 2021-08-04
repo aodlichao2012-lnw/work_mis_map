@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30104.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BKK_Landsmaps", "BKK_Landsmaps\BKK_Landsmaps.csproj", "{0ABDA774-C5C0-4FFB-8B1A-D48258A69F22}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0ABDA774-C5C0-4FFB-8B1A-D48258A69F22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0ABDA774-C5C0-4FFB-8B1A-D48258A69F22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0ABDA774-C5C0-4FFB-8B1A-D48258A69F22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0ABDA774-C5C0-4FFB-8B1A-D48258A69F22}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3C7FC2C1-C2FE-4672-95FA-EDBD7139C03C}
+	EndGlobalSection
+EndGlobal
